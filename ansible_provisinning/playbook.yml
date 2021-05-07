@@ -1,0 +1,10 @@
+---
+- name: play0
+  hosts: "{{ host }}"
+  tasks:
+  - name: create file via SSH
+    file:
+      dest: /home/fichier_test_SSH
+      state: touch
+    tags:
+      - create file via SSH
