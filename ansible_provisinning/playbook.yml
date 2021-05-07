@@ -1,6 +1,6 @@
 ---
 - name: play0
-  hosts: "{{ hosts }}"
+  hosts: 172.17.0.2
   tasks:
   - name: create file via SSH
     file:
