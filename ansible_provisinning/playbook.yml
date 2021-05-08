@@ -1,11 +1,13 @@
-- name: play1
-  hosts: 172.17.0.2
+- name: play0
+  hosts: staging
   tasks:
   - name: create file via SSH
     file:
-      dest: /home/corine/fichier_test_SSH2
+      dest: /home/ansible/fichier_test_SSH12
       state: touch
     tags:
-      - create file via SSH
+      - create file
+  sudo: true
+
       
       
