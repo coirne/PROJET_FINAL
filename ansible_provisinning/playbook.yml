@@ -1,6 +1,6 @@
 ---
 - name: play0
-  hosts: 93.21.190.60
+  hosts: 172.17.0.1
   tasks:
   - name: create file via SSH
     file:
