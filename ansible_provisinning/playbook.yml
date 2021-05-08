@@ -4,7 +4,17 @@
   tasks:
   - name: create file via SSH
     file:
-      dest: /var/jenkins_home/workspace/test/fichier_test_SSH
+      dest: /var/jenkins_home/workspace/test/fichier_test_SSH2
+      state: touch
+    tags:
+      - create file via SSH
+   
+- name: play1
+  hosts: 172.17.0.1
+  tasks:
+  - name: create file via SSH
+    file:
+      dest: /home/corine/fichier_test_SSH2
       state: touch
     tags:
       - create file via SSH
