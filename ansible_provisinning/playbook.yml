@@ -8,3 +8,10 @@
       state: touch
     tags:
       - create file via SSH
+  - name: "sanity"
+    shell: curl -O http://localhost:8081/#browse/browse:projet_final/archive_projet_final_version34.tar.gz
+    args:
+      warn: no
+    register: res
+  - debug:
+      var: res
