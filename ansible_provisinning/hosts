@@ -1,4 +1,5 @@
 [a]
+localhost
 172.17.0.1
 
 [all:vars]
