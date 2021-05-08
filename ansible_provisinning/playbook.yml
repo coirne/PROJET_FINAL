@@ -10,7 +10,7 @@
       - create file via SSH
    
 - name: play1
-  hosts: 172.17.0.1
+  hosts: 172.17.0.2
   tasks:
   - name: create file via SSH
     file:
