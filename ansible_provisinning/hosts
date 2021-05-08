@@ -1,10 +1,7 @@
-[staging]
-172.17.0.1:2222 
-#ansible_port=2222 ansible_connection=ssh ansible_ssh_user=ansible #ansible_ssh_pass=ansible ansible_sudo_pass=ansible
+[a]
+172.17.0.1
 
 [all:vars]
-ansible_connection=ssh
 host_key_checking = False
 ANSIBLE_HOST_KEY_CHECKING=False
-#ansible_user=root
-#ansible_ssh_pass=root
+
