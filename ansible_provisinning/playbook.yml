@@ -3,7 +3,7 @@
   tasks:
   - name: create file via SSH
     file:
-      dest: /home/ansible/fichier_test_SSH12
+      dest: /home/ansible/fichier_test_SSHdejenkins
       state: touch
     tags:
       - create file
