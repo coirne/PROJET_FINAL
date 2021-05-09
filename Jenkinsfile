@@ -9,8 +9,8 @@ pipeline {
 
     stage('docker') {
       steps {
-        dockerNode(image: 'ahmed24khaled/ansible-management') {
-          sh 'ansible-playbook -v -i ./ansible_provisinning/hosts ./ansible_provisinning/playbook.yml'
+        dockerNode(image: 'node:14-alpine') {
+          sh 'node --version'
         }
 
       }
